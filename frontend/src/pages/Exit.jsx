@@ -1,4 +1,4 @@
-import axios from "axios";
+import api from "../api/api";
 import { useState } from "react";
 
 const Exit = () => {
@@ -24,11 +24,11 @@ const Exit = () => {
 
   const handleExit = async () => {
     try {
-      const res = await axios.post("https://smart-parking-manager.onrender.com/api/vehicles/exit", {
+      const res = await api.post("/vehicles/exit", {
         vehicleNumber,
       });
 
-      alert(res.data.message);
+      alert(res.data.message)
 
       setVehicle(null);
       setVehicleNumber("");
@@ -36,6 +36,7 @@ const Exit = () => {
       alert(error.response?.data?.message || "Something went wrong");
     }
   };
+  
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">Vehicle Exit</h1>
