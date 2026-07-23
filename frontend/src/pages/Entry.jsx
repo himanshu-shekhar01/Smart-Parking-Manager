@@ -37,27 +37,6 @@ const allocateVehicle = async (data) => {
 };
 
 
-  // const allocateVehicle = async (data) => {
-  //   try {
-  //     const response = await vehicleEntry(data);
-
-  //     setMessage(response.data.message);
-  //     setError("");
-
-  //     // Save response for success card
-  //     setAllocation({
-  //       vehicleNumber: response.data.data.vehicleNumber,
-  //       vehicleType: data.vehicleType,
-  //       slot: response.data.data.slotNumber,
-  //       entryTime: new Date().toLocaleTimeString(),
-  //     });
-  //   } catch (err) {
-  //     setError(err.response?.data?.message || "Something went wrong");
-  //     setMessage("");
-  //     setAllocation(null);
-  //   }
-  // };
-
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       {/* Page Heading */}
