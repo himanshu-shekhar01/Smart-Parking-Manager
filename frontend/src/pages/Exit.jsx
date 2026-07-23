@@ -24,7 +24,7 @@ const Exit = () => {
 
   const handleExit = async () => {
     try {
-      const res = await axios.post("http://localhost:8001/api/vehicles/exit", {
+      const res = await axios.post("https://smart-parking-manager.onrender.com/api/vehicles/exit", {
         vehicleNumber,
       });
 
