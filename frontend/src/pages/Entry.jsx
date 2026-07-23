@@ -30,9 +30,9 @@ const allocateVehicle = async (data) => {
 
   // Temporary parking statistics (Later from backend)
   const parkingStats = {
-  totalSlots: 100,
-  availableSlots: 42,
-  occupiedSlots: 58,
+  totalSlots: 20,
+  availableSlots: 4,
+  occupiedSlots: 16,
   nextAvailableSlot: "A12",
 };
 
