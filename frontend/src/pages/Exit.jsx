@@ -36,10 +36,11 @@ const Exit = () => {
       alert(error.response?.data?.message || "Something went wrong");
     }
   };
-  
+
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">Vehicle Exit</h1>
+      <h1>Vehicle Exit v2</h1>
 
       <div className="bg-white rounded-xl shadow-md p-6 max-w-2xl">
         {/* Search Vehicle */}
